@@ -1,0 +1,14 @@
+{
+  "name": "hook-extensions",
+  "version": "1.0.0",
+  "description": "hook_request_headers",
+  "content_scripts": [
+    {
+      "matches": ["http://*/*", "https://*/*"],
+      "run_at": "document_start",
+      "js": ["inject.js"],
+      "all_frames": true
+    }
+  ],
+  "manifest_version": 2
+}
